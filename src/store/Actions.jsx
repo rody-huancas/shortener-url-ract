@@ -26,6 +26,9 @@ export function load(state, action) {
   if (data) {
     const temp = JSON.parse(data);
     return { items: [...temp] };
+  } else {
+    // Si no hay datos almacenados, devolver un objeto vacío
+    return { items: [] };
   }
 }
 

@@ -1,7 +1,7 @@
 const MainContainer = ({ children }) => {
   return (
     <>
-      <div>{children}</div>
+      <div className="container">{children}</div>
     </>
   );
 };

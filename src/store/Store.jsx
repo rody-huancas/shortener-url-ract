@@ -7,7 +7,7 @@ export const reducer = (state, action) => {
       return add(state, action);
     case "LOAD":
       return load(state, action);
-    case "ADD_VIEW":
+    case "LOAD_VIEW":
       return addView(state, action);
 
     default:

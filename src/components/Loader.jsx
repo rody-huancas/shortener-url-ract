@@ -1,11 +1,17 @@
 export default function Loader({ item, id }) {
   if (item === null) {
-    return <div>Loading...</div>;
+    return <div className="loader">Cargando</div>;
   }
 
   if (item === undefined) {
-    return <div>No url found {id}</div>;
+    return <div className="loader__found">URL no encontrada: {id}</div>;
   }
 
-  return item ? <div>Redirect {item.url}</div> : "";
+  return item ? (
+    <div className="loader__redirect">
+      Redireccionado a: <span>{item.url}</span>
+    </div>
+  ) : (
+    ""
+  );
 }
