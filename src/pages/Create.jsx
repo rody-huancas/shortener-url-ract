@@ -26,7 +26,10 @@ const Create = () => {
                   <div className="main__card-container">
                     <p className="main__item">
                       Url:
-                      <a href={`/u/${item.shortUrl}`} target="_blank">
+                      <a
+                        href={`${document.location}u/${item.shortUrl}`}
+                        target="_blank"
+                      >
                         {item.shortUrl}
                       </a>
                     </p>
